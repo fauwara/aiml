@@ -37,8 +37,8 @@ def recAOStar (n):
 		else:
 			if min_cost_group in allNodes:
 				is_expanded = True
-				recAOStar(min_cost_group)
 				print(is_expanded)
+				recAOStar(min_cost_group)
 		
 		if is_expanded:
 			min_cost_verify, min_cost_group_verify = least_cost_group(and_nodes, or_nodes, {})
